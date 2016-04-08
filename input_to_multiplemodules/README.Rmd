@@ -19,7 +19,7 @@ library(DiagrammeRsvg)
 ```
 
 # Input(s) passed to multiple modules
-This series of examples illustrates the design pattern of passing one or more inputs through to another module. An in-depth explanation is available on my [blog post](http://itsalocke.com/shiny-module-design-pattern-pass-inputs-one-module-another/)
+This series of examples illustrates the design pattern of passing one or more inputs through to another module.
 
 ## [01_original.R](01_original.R)
 The standard shiny app example with some comments removed for brevity.
@@ -34,11 +34,11 @@ Push an input parameter created at the app level to two instances of a chart mod
 
 ```{r echo=FALSE, eval=FALSE}
 DiagrammeR("graph LR
-           I[input$bins]-->R[\"reactive(input$bins)\"]
+           I[input$bins]-->R[\"bins<-reactive(input$bins)\"]
            R-->CA[\"callModule(chart,'chartA',bins)\"]
            R-->CB[\"callModule(chart,'chartB',bins)\"]
            ")
 ```
 ![](README/simplePassthrough.png)
 
-
+An in-depth explanation is available on my [blog post](http://itsalocke.com/shiny-module-design-pattern-pass-inputs-one-module-another/)
