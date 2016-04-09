@@ -19,3 +19,10 @@ Push an input parameter created at the app level to two instances of a chart mod
 ![](README/simplePassthrough.png)
 
 An in-depth explanation is available on my [blog post](http://itsalocke.com/shiny-module-design-pattern-pass-inputs-one-module-another/)
+
+[03\_inputmodule.R](03_inputmodule.R)
+-------------------------------------
+
+Use a input parameter from one module in another module.
+
+![](README/inputPassthrough.png)

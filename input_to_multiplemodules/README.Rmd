@@ -42,3 +42,14 @@ DiagrammeR("graph LR
 ![](README/simplePassthrough.png)
 
 An in-depth explanation is available on my [blog post](http://itsalocke.com/shiny-module-design-pattern-pass-inputs-one-module-another/)
+
+## [03_inputmodule.R](03_inputmodule.R)
+Use a input parameter from one module in another module.
+
+```{r echo=FALSE, eval=FALSE}
+DiagrammeR("graph LR
+           I[\"bins<-callModule(setup,'setupA')\"]-->CA[\"callModule(chart,'chartA',bins)\"]
+           I-->CB[\"callModule(chart,'chartB',bins)\"]
+           ")
+```
+![](README/inputPassthrough.png)
