@@ -23,6 +23,13 @@ An in-depth explanation is available on my [blog post](http://itsalocke.com/shin
 [03\_inputmodule.R](03_inputmodule.R)
 -------------------------------------
 
-Use a input parameter from one module in another module.
+Use an input parameter from one module in another module.
+
+![](README/inputPassthrough.png)
+
+[04\_allinputsmodule.R](04_allinputsmodule.R)
+---------------------------------------------
+
+Pass all input parameters from one module to another module.
 
 ![](README/inputPassthrough.png)
